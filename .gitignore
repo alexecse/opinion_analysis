@@ -2,6 +2,4 @@ archive.zip
 training.1600000.processed.noemoticon.csv
 twitter_corpus-master/twitter_account.txt
 twitter_corpus-master.zip
-twitter_corpus-master/corpus.csv
-twitter_corpus-master/full-corpus.csv
 twitter_corpus-master/install.py
