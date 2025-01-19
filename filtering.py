@@ -29,3 +29,4 @@ random_twitter_sample.to_csv(output_file_path_twitter, index=False)
 output_file_path_google = 'data_bases/google.csv'
 random_google_sample.to_csv(output_file_path_google, index=False)
 
+# 0 - negativ 1 - neutral 2 - pozitiv
