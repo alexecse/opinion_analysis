@@ -1,11 +1,9 @@
 import pandas as pd
 import numpy as np
 
-# Încarcă datele din fișierul CSV
-csv_file_path = 'data_bases/training.1600000.processed.noemoticon.csv'  # Înlocuiește cu calea reală a fișierului
-df = pd.read_csv(csv_file_path, encoding='latin1')  # Specifică encoding-ul, dacă este necesar
+csv_file_path = 'data_bases/training.1600000.processed.noemoticon.csv' 
+df = pd.read_csv(csv_file_path, encoding='latin1')  
 
-# Filtrează tweet-urile care conțin cuvântul 'apple' în text
 apple_filtered_df = df[df[df.columns[-1]].str.contains(' apple ', case=False, na=False)]
 random_apple_sample = apple_filtered_df.sample(n=150)
 
@@ -18,7 +16,6 @@ random_twitter_sample = twitter_filtered_df.sample(n=150)
 google_filtered_df = df[df[df.columns[-1]].str.contains(' google ', case=False, na=False)]
 random_google_sample = google_filtered_df.sample(n=150)
 
-# Salvează rezultatul într-un nou fișier CSV
 output_file_path_apple = 'data_bases/apple.csv'
 random_apple_sample.to_csv(output_file_path_apple, index=False)
 
@@ -32,5 +29,3 @@ random_twitter_sample.to_csv(output_file_path_twitter, index=False)
 output_file_path_google = 'data_bases/google.csv'
 random_google_sample.to_csv(output_file_path_google, index=False)
 
-# Afișează câteva rânduri din rezultatul filtrat
-print('done')
