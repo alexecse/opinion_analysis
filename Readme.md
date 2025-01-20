@@ -7,5 +7,5 @@
 
 ## Specifications for this project
 
-- to anailse public opinion we will be using the [Sentiment140 dataset](https://www.kaggle.com/datasets/kazanova/sentiment140)
+- to anailse public opinion we will be using the [Sentiment140 dataset](https://www.kaggle.com/datasets/kazanova/sentiment140) and the Sanders Analisys dataset
 - the field of most concern for this project is "target", which contains **ordinal** data
